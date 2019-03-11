@@ -12,7 +12,12 @@
 
 ### Prerequisites
 
-hyperledger composer 설치 및 node.js, mongodb 설치 되어 있어야 
+hyperledger, hyperledger composer 설치 및 node.js, mongodb 설치 되어 있어야 함
+
+
+
+------
+수정 중
 
 ```
 yukil
