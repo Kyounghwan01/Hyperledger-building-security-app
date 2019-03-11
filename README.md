@@ -88,6 +88,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * etc
 
 
-<iframe width="640" height="360" src="https://www.youtube.com/watch?v=0pHnVIqmqoU&feature=youtu.be" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+<iframe width="640" height="360" src="https://youtu.be/0pHnVIqmqoU" frameborder="0" gesture="media" allowfullscreen=""></iframe>
 
 
