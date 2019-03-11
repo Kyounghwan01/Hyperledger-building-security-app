@@ -10,7 +10,8 @@
 깃헙의 LFS를 설명해 놓은 동영상을 링크를 걸면 
 
 ``` [![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://youtu.be/uLR1RNqJ1Mw?t=0s) ```
-[![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://youtu.be/uLR1RNqJ1Mw?t=0s) 
+[![Video Label](http://img.youtube.com/vi/0pHnVIqmqoU/0.jpg)](https://youtu.be/0pHnVIqmqoU) 
+
 
 위와 같이 나옵니다. (아주 고맙게도 유튜브에서는 스크린샷 링크를 제공해주네요. )
 
