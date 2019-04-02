@@ -1,16 +1,21 @@
+//모듈 불러오기 
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var cors = require('cors');
 app.use(cors());
 app.use(bodyParser.json());
+//mongodb 접속
 var mongo = require('mongodb').MongoClient;
+//mongodb에 있는 27017 포트에 hyper메뉴에 접속 
 var url = 'mongodb://localhost:27017/hyper';
 
+//mongodb와 연결, 연결시 아래 콘솔 출력
 mongo.connect(url, (err)=>{
     console.log('connect database!')
 })
 
+//앱으로 데이터를 보내주기 위한 함수(get), db이름은 user
 app.get('/data', (req, res)=>{
     mongo.connect(url, (err, db)=>{
         var collection = db.collection('user');
@@ -201,6 +206,8 @@ app.post('/Electricdata', (req, res)=>{
         })
     })
 })
+
+//이미지값 저장, 보내기
 
 app.post('/FacilityImage', (req, res)=>{
     mongo.connect(url, (err, db)=>{
