@@ -19,6 +19,7 @@ class LoginScreen extends Component {
     }
   }
 
+  //render이후 fetchmem에서 불러오는 값을 data로 저장함. 
   componentDidMount() {
     this.fetchMem().then(items => {
       this.setState({
@@ -27,6 +28,7 @@ class LoginScreen extends Component {
     });
   }
 
+  //hyperledger에서 User에 해당하는 값들을 불러온다.
   fetchMem() {
     return fetch(`http://localhost:3000/api/User`)
     .then(response => response.json())
@@ -35,6 +37,7 @@ class LoginScreen extends Component {
     });
   }
 
+  //mongodb에서 값을 불러온 후 user로 저장함 
   loginCheck = () => {
     for(let j = 0; j < this.state.data.length; j++) {
       if(this.state.email_hyper==this.state.data[j].email){
@@ -47,11 +50,13 @@ class LoginScreen extends Component {
           }) 
 
           for (let i = 0; i < this.state.user.length; i++) {
+            //스크린에서 유저가 쓴 값과 db에 있는 값을 대조함
             if(this.state.email_hyper && this.state.email_db && this.state.password_db){
               if(this.state.email_db == this.state.user[i].email_db){
                 if(this.state.password_db == this.state.user[i].password_db) {
                   if(this.state.email_hyper==this.state.email_db){
                     this.props.navigation.navigate('FlatScreen', {
+                      //email값, 이름 값을 admin_db, name_db이라는 이름으로 flatscreen으로 내보낸다. 
                       admin_db: this.state.email_db,
                       name_db: this.state.user[i].name_db})
                       console.log(this.state.user[i].name_db);
