@@ -241,6 +241,7 @@ app.get('/FacilityImage', (req, res)=>{
     })
 })
 
+//앱에서는 3210포트로 
 app.listen(3210, ()=>{
     console.log('Server connect @port 3210!');
 })
