@@ -114,7 +114,7 @@ Specify if you want to enable TLS security for the REST API: No
 #### 6.2.10. localhost:3000 접속 
 
 ### 7. 앱 실행<br>
-##### 7.1. 다운 받은 앱 dir에서 실행
+#### 7.1. 다운 받은 앱 dir에서 실행
 ```
 expo start
 ```
