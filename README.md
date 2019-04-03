@@ -22,6 +22,8 @@
 * [Node.js](https://nodejs.org/en/download/) - latest
 * [Git client](https://git-scm.com/downloads) - latest
 * [Hyperledger]() - latest
+* [Hyperledger Composer]() - latest
+* [mongodb]() - latest
 
 ## Application Workflow Diagram
 
@@ -30,12 +32,6 @@
 * 건물에 대한 등급 산정시 hyperledger DB에 저장이 되며 그 정보에 대한 내부 해쉬 알고리즘에 의해 **고유 해쉬 값(transaction ID)** 이 지정된다. 그 고유값은 모든 노드와 공유하게 됨<br>
 이 후 위,변조의 이유로 정보를 추적할 때 이 고유 해쉬값을 query로 호출시 정보를 조작한 정보의 고유 값만 다른 노드들과 비교시 다르다는 것으로 **조작 판별 가능** 
 
-## steps
-
-
-
-### 수정 중입니다 :)
-
 ```
 yukil
 Give examples
@@ -43,13 +39,21 @@ Give examples
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+1. 파일 클론합니다.
 ```
-Give the example
+git clone https://github.com/Kyounghwan01/Hyperledger-building-security-app.git
 ```
+2. DB에 있는 app.js파일을 실행합니다.
+```
+node app.js
+```
+3. mongodb를 실행합니다.
+```
+mongod
+```
+> 이후 아래 이미지와 같이 연결됬다는 콘솔을 확인합니다.
+<img width="726" alt="back" src="https://user-images.githubusercontent.com/44187477/55452438-b2c27800-5612-11e9-852b-e3dbf6353ac6.png">
+
 
 And repeat
 
@@ -97,24 +101,12 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-
-<iframe width="640" height="360" src="https://youtu.be/0pHnVIqmqoU" frameborder="0" gesture="media" allowfullscreen=""></iframe>
 
 <!-- Markdown link & img dfn's -->
 
