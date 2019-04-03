@@ -77,11 +77,11 @@ License: Apache-2.0<br>
 Namespace: org.acme.model<br>
 빈 네트워크를 설정하시겠습니까?'의 질문에는 Yes를 선택
 ```
-6.2. 생성된 네트워크 내에서 파일 수정
-6.2.1. org.acme.model.cto 파일 수정
-6.2.2. logic.js 파일 수정
-6.2.3. permissions.acl 파일 수정
-6.2.4. 수정 이후 아래 명어로 .bna 파일 생성
+6.2. 생성된 네트워크 내에서 파일 수정<br>
+6.2.1. org.acme.model.cto 파일 수정<br>
+6.2.2. logic.js 파일 수정<br>
+6.2.3. permissions.acl 파일 수정<br>
+6.2.4. 수정 이후 아래 명어로 .bna 파일 생성<br>
 ```
 composer archive create -t dir -n .
 ```
