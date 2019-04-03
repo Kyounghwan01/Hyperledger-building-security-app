@@ -21,7 +21,10 @@
 
 ## Application Workflow Diagram
 
+<img width="715" alt="contentMap" src="https://user-images.githubusercontent.com/44187477/55451567-755beb80-560e-11e9-8c48-82b14c9f6f77.png">
 
+* 건물에 대한 등급 산정시 hyperledger DB에 저장이 되며 그 정보에 대한 내부 해쉬 알고리즘에 의해 **고유 해쉬 값(transaction ID)** 이 지정된다. 그 고유값은 모든 노드와 공유하게 됨<br>
+이 후 위,변조의 이유로 정보를 추적할 때 이 고유 해쉬값을 query로 호출시 정보를 조작한 정보의 고유 값만 다른 노드들과 비교시 다르다는 것으로 **조작 판별 가능** 
 
 ## steps
 
