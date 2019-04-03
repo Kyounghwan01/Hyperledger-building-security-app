@@ -1,11 +1,15 @@
 
-# hypersignal
-> **하이퍼레저 기반 건물안전등급 등록 및 조회 앱**
+# Hypersignal
+> **하이퍼레저 기반 건물안전등급 등록 및 조회 앱** <br>
+하이퍼레저와 신호등의 signal(빨강,노랑,초록)을 결합한 단어(Hyperldger + signal)
+
 
 ## Getting started
 
-> 탈세, 안전점검 비용 감소 등의 이유로 건물 안전 점검에 대한 정보 위변조를 막기 위해 개발을 시작하였습니다.<br>
-건물주, 건물관리자, 정부, 시민 각 이해관계자간 정보교환의 불편성을 최소화 할 수 있습니다<br><br>[![Video Label](http://img.youtube.com/vi/0pHnVIqmqoU/0.jpg)](https://youtu.be/0pHnVIqmqoU) 
+> 탈세, 안전점검 비용 감소 등의 이유로 건물 안전 점검에 대한 정보 **위변조** 를 막기 위해 개발을 시작하였습니다.<br>
+건물주, 건물관리자, 정부, 시민 각 이해관계자간 **정보교환의 불편성** 을 최소화 할 수 있습니다.<br>
+법령에 지정된 **안전등급 A,B등급 : 초록, C,D등급 : 노랑, E,F등급 : 빨강** 으로 표현하였습니다.<br>
+<br>[![Video Label](http://img.youtube.com/vi/0pHnVIqmqoU/0.jpg)](https://youtu.be/0pHnVIqmqoU) 
 
 
 
