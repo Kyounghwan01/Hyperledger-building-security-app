@@ -38,36 +38,36 @@ yukil
 Give examples
 ```
 
-### Installing
+## Installing
 
-1. 파일 클론합니다.
+### 1. 파일 클론합니다.
 ```
 git clone https://github.com/Kyounghwan01/Hyperledger-building-security-app.git
 ```
-2. DB에 있는 app.js파일을 실행합니다.
+### 2. DB에 있는 app.js파일을 실행합니다.
 ```
 node app.js
 ```
-3. mongodb를 실행합니다.
+### 3. mongodb를 실행합니다.
 ```
 mongod
 ```
 > 이후 아래 이미지와 같이 연결됬다는 콘솔을 확인합니다.
 <img width="726" alt="back" src="https://user-images.githubusercontent.com/44187477/55452438-b2c27800-5612-11e9-852b-e3dbf6353ac6.png">
 
-4. Hyperledger server 실행
+### 4. Hyperledger server 실행
 ```
 stopFabric.sh
 ```
-
+### 5. Hyperledger Peer 생성
 ```
 createPeerAdminCard.sh
 ```
-6. Hyperledger network 생성
+### 6. Hyperledger network 생성
 ```
 yo hyperledger-composer:businessnetwork
 ```
-6.1. 네트워크 생성
+#### 6.1. 네트워크 생성
 ```
 Bushiness network name: safety_check<br>
 Description: safety_check(자유롭게 적어도 됨)<br>
@@ -77,31 +77,31 @@ License: Apache-2.0<br>
 Namespace: org.acme.model<br>
 빈 네트워크를 설정하시겠습니까?'의 질문에는 Yes를 선택
 ```
-6.2. 생성된 네트워크 내에서 파일 수정<br>
-6.2.1. org.acme.model.cto 파일 수정<br>
-6.2.2. logic.js 파일 수정<br>
-6.2.3. permissions.acl 파일 수정<br>
-6.2.4. 수정 이후 아래 명어로 .bna 파일 생성<br>
+#### 6.2. 생성된 네트워크 내에서 파일 수정<br>
+#### 6.2.1. org.acme.model.cto 파일 수정<br>
+#### 6.2.2. logic.js 파일 수정<br>
+#### 6.2.3. permissions.acl 파일 수정<br>
+#### 6.2.4. 수정 이후 아래 명어로 .bna 파일 생성<br>
 ```
 composer archive create -t dir -n .
 ```
-6.2.5. 생성된 .bna 파일을 네트워크에 설치
+#### 6.2.5. 생성된 .bna 파일을 네트워크에 설치
 ```
 composer network install --card PeerAdmin@hlfv1 --archiveFile safety-check@0.0.1.bna
 ```
-6.2.6. 설치한 네트워크 실행
+#### 6.2.6. 설치한 네트워크 실행
 ```
 composer network start --networkName safety-check --networkVersion 0.0.1 --networkAdmin admin --networkAdminEnrollSecret adminpw --card PeerAdmin@hlfv1 --file networkadmin.card
 ```
-6.2.7. 접속 카드 생성
+#### 6.2.7. 접속 카드 생성
 ```
 composer card import --file networkadmin.card 
 ```
-6.2.8. 설치한 네트워크 핑 테스트
+#### 6.2.8. 설치한 네트워크 핑 테스트
 ```
 composer network ping --card admin@safety-check
 ```
-6.2.9. 위 작업 모두 완료시 컨트랙트 포함한 서버 실행
+#### 6.2.9. 위 작업 모두 완료시 컨트랙트 포함한 서버 실행
 ```
 composer-rest-server
 
@@ -111,10 +111,10 @@ Specify if you want to enable authentication for the REST API using Passport: No
 Specify if you want to enable event publication over WebSocket: Yes
 Specify if you want to enable TLS security for the REST API: No
 ```
-6.2.10. localhost:3000 접속 
+#### 6.2.10. localhost:3000 접속 
 
-7. 앱 실행<br>
-7.1. 다운 받은 앱 dir에서 실행
+### 7. 앱 실행<br>
+##### 7.1. 다운 받은 앱 dir에서 실행
 ```
 expo start
 ```
