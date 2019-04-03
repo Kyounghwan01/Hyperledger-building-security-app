@@ -1,14 +1,22 @@
 
 # hypersignal
-하이퍼레저 기반 건물안전등급 등록 및 조회 앱
+> **하이퍼레저 기반 건물안전등급 등록 및 조회 앱**
 
-## Getting Started
+## 프로젝트 내용
 
-건물 안전등급의 위변조를 막는 취지로 개발
-
-## 앱 시연 영상
-
+> **최근 지속적으로 발생하는 건물 안전등급의 위변조를 막는 취지로 개발<br>**
+> 
 [![Video Label](http://img.youtube.com/vi/0pHnVIqmqoU/0.jpg)](https://youtu.be/0pHnVIqmqoU) 
+
+* [Docker](https://www.docker.com/products) - latest
+* [Docker Compose](https://docs.docker.com/compose/overview/) - latest
+* [NPM](https://www.npmjs.com/get-npm) - latest
+* [nvm]() - latest
+* [Node.js](https://nodejs.org/en/download/) - latest
+* [Git client](https://git-scm.com/downloads) - latest
+* [Hyperledger]() - latest
+
+
 
 ### Prerequisites
 
@@ -102,4 +110,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 <iframe width="640" height="360" src="https://youtu.be/0pHnVIqmqoU" frameborder="0" gesture="media" allowfullscreen=""></iframe>
 
+<!-- Markdown link & img dfn's -->
 
